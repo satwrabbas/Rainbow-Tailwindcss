@@ -1,70 +1,221 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Branding Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rainbow Branding</title>
+
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+    <style>
+      body {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
   </head>
-  <body class="bg-[#fbf7ee] min-w-200 shrink-0">
-    <nav class="flex justify-around">
-      <p class="mt-3">Rainbow</p>
-      <div class="flex justify-between mt-5">
-        <img class="ml-5" src="Images/SVG/SVG-1.svg" alt="search">
-        <img class="ml-5" src="Images/SVG/SVG-2.svg" alt="me">
-        <img class="ml-5" src="Images/SVG/SVG-3.svg" alt="mysuit ">
-      </div>
-    </nav>
+  <body class="bg-[#fbf7ee] text-slate-800">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <nav class="flex justify-between items-center py-4 md:py-8">
+        <a href="#" class="flex-shrink-0">
+          <img
+            class="h-8 md:h-10 w-auto object-contain"
+            src="logo.svg"
+            alt="Rainbow Logo"
+          />
+        </a>
 
-    <header class="mt-20 flex justify-around ">
-      <div class="flex-c  max-w-[340px] min-w-[340px] ">
-        <p class="font-bold mb-9 text-3xl">Spring / Summer Vibs</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae asperiores soluta dolore nisi ad tempora odit illo aliquam tempore ratione.</p>
-        <img src="Images/mohamad-khosravi-DuY4JP2M34Q-unsplash.jpg" alt="first  ">
-      </div>
-      <div class="flex-c max-w-[340px] min-w-[340px]">
-        <img src="Images/austin-wade-d2s8NQ6WD24-unsplash.jpg" alt="second ">
-        <p class=" my-5 font-light ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reprehenderit atque fugit tempore consequuntur, ratione dolor voluptatem delectus aut, unde simil[...]
-        <button class="border border-[#af75452] text-[#af7452] px-5 py-2">Explor</button>
-      </div>
-    </header>
+        <div
+          class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-wider text-gray-600"
+        >
+          <a href="#" class="hover:text-[#af7452] transition">Home</a>
+          <a href="#" class="hover:text-[#af7452] transition">Collections</a>
+          <a href="#" class="hover:text-[#af7452] transition">About</a>
+        </div>
 
-    <section class="flex justify-around pt-20">
-      <div class="flex-c justify-around items-start max-w-[340px] min-w-[340px] ">
-        <p class="font-bold mb-9 text-3xl">An Industrial Take On Streetwear</p>
-        <p class="w- mb-5 font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when [...]
-        <button class="border border- text- py-2 px-5">Shop Now</button>
-      </div>
-      <img class="max-w-[340px] min-w-[340px]" src="Images/austin-wade-iQn82USu8gs-unsplash.jpg" alt="">
-    </section>
+        <div class="flex items-center gap-4 md:gap-6">
+          <img
+            class="w-5 h-5 md:w-6 md:h-6 cursor-pointer hover:opacity-70 transition"
+            src="Images/SVG/SVG-1.svg"
+            alt="search"
+          />
+          <img
+            class="w-5 h-5 md:w-6 md:h-6 cursor-pointer hover:opacity-70 transition"
+            src="Images/SVG/SVG-2.svg"
+            alt="user"
+          />
+          <img
+            class="w-5 h-5 md:w-6 md:h-6 cursor-pointer hover:opacity-70 transition"
+            src="Images/SVG/SVG-3.svg"
+            alt="cart"
+          />
+        </div>
+      </nav>
 
-    <section class="flex flex-wrap justify-center items-center mt-20 p-10">
-      <div class="p-5 ml-5">
-        <p class="font-bold mb-6">Buy Now, Pay Later</p>
-        <p class="font-thin w-[14rem]">0% interest financing available pay after 30 days.</p>
-        <button class="border border-[#af7452] text-[#af7452] py-2 px-5 mt-6">Shop Now</button>
+      <header
+        class="mt-6 md:mt-12 lg:mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center"
+      >
+        <div class="flex flex-col gap-4 md:gap-6">
+          <div>
+            <h1
+              class="font-bold text-3xl md:text-4xl lg:text-6xl text-[#af7452] mb-2 md:mb-4 leading-tight"
+            >
+              Spring / Summer <br />
+              <span class="text-slate-900">Vibes.</span>
+            </h1>
+            <p
+              class="text-gray-600 leading-relaxed text-sm md:text-base max-w-md"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae asperiores soluta dolore nisi ad tempora odit illo
+              aliquam tempore ratione.
+            </p>
+          </div>
+
+          <div class="rounded-lg shadow-lg overflow-hidden">
+            <img
+              class="w-full h-auto block"
+              src="Images/mohamad-khosravi-DuY4JP2M34Q-unsplash.jpg"
+              alt="Spring Vibes"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4 md:gap-6 mt-0 md:mt-20">
+          <div class="rounded-lg shadow-lg overflow-hidden">
+            <img
+              class="w-full h-auto block"
+              src="Images/austin-wade-d2s8NQ6WD24-unsplash.jpg"
+              alt="Summer Fashion"
+            />
+          </div>
+
+          <p
+            class="text-gray-600 leading-relaxed font-light text-sm md:text-base"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            reprehenderit atque fugit tempore consequuntur, ratione dolor
+            voluptatem delectus aut, unde similique.
+          </p>
+          <button
+            class="w-fit border border-[#af7452] text-[#af7452] px-6 py-2 md:px-8 md:py-3 hover:bg-[#af7452] hover:text-white transition duration-300 uppercase text-xs md:text-sm tracking-widest"
+          >
+            Explore
+          </button>
+        </div>
+      </header>
+
+      <section
+        class="py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center"
+      >
+        <div
+          class="flex flex-col justify-center items-start order-2 md:order-1"
+        >
+          <h2
+            class="font-bold text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6 leading-tight"
+          >
+            An Industrial Take <br />
+            On Streetwear
+          </h2>
+          <p
+            class="text-gray-600 mb-6 md:mb-8 leading-relaxed text-sm md:text-base max-w-md font-light"
+          >
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+          <button
+            class="bg-[#af7452] text-white py-2 px-6 md:py-3 md:px-8 hover:bg-[#8e5a3c] transition duration-300 uppercase text-xs md:text-sm tracking-widest shadow-md"
+          >
+            Shop Now
+          </button>
+        </div>
+        <div class="order-1 md:order-2 rounded-lg shadow-xl overflow-hidden">
+          <img
+            class="w-full h-auto block"
+            src="Images/austin-wade-iQn82USu8gs-unsplash.jpg"
+            alt="Industrial Streetwear"
+          />
+        </div>
+      </section>
+
+      <section class="py-10 md:py-20 border-t border-[#e5dfd3]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-center">
+          <div
+            class="p-6 md:p-8 bg-white/50 rounded-xl hover:shadow-lg transition duration-300"
+          >
+            <h3
+              class="font-bold text-lg md:text-xl mb-2 md:mb-4 text-slate-800"
+            >
+              Buy Now, Pay Later
+            </h3>
+            <p
+              class="font-light text-sm md:text-base text-gray-600 mb-4 md:mb-6"
+            >
+              0% interest financing available pay after 30 days.
+            </p>
+            <button
+              class="text-[#af7452] font-semibold text-sm border-b border-[#af7452] hover:text-[#8e5a3c] transition pb-1"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="p-6 md:p-8 bg-white/50 rounded-xl hover:shadow-lg transition duration-300"
+          >
+            <h3
+              class="font-bold text-lg md:text-xl mb-2 md:mb-4 text-slate-800"
+            >
+              Cashback Reward
+            </h3>
+            <p
+              class="font-light text-sm md:text-base text-gray-600 mb-4 md:mb-6"
+            >
+              Collect & Redeem on every order that you purchased.
+            </p>
+            <button
+              class="text-[#af7452] font-semibold text-sm border-b border-[#af7452] hover:text-[#8e5a3c] transition pb-1"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="p-6 md:p-8 bg-white/50 rounded-xl hover:shadow-lg transition duration-300"
+          >
+            <h3
+              class="font-bold text-lg md:text-xl mb-2 md:mb-4 text-slate-800"
+            >
+              Secure Payment
+            </h3>
+            <p
+              class="font-light text-sm md:text-base text-gray-600 mb-4 md:mb-6"
+            >
+              Gurantee 100 secure payment online on our website.
+            </p>
+            <button
+              class="text-[#af7452] font-semibold text-sm border-b border-[#af7452] hover:text-[#8e5a3c] transition pb-1"
+            >
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-[#2a2a2a] text-stone-300 py-10 md:py-16">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="font-bold text-white mb-2 tracking-wide">Created by Satwr</p>
+        <p class="text-sm opacity-60 mb-6 md:mb-8">Training for TailwindCSS</p>
+        <div class="w-16 h-1 bg-[#af7452] mx-auto mb-6 md:mb-8"></div>
+        <p class="text-white font-serif italic text-lg md:text-xl">
+          "Thanks for your Time 🥂"
+        </p>
       </div>
-      <div class="p-10 ml-5">
-        <p class="font-bold mb-6">Cashback Reward</p>
-        <p class="font-thin w-[14rem]">Collect & Redeem on every order that you purchased.</p>
-        <button class="border border-[#af7452] text-[#af7452] py-2 px-5 mt-6">Shop Now</button>
-      </div>
-      <div class="p-10 ml-5">
-        <p class="font-bold mb-6">Secure Payment</p>
-        <p class="font-thin w-[14rem]">Gurantee 100 secure payment online on our website.</p>
-        <button class="border border-[#af7452] text-[#af7452] py-2 px-5 mt-6">Shop Now</button>
-      </div>
-    </section>
-    <footer class="flex justify-center shrink-0 items-center bg-stone-300 py-10 min-w-[800px]">
-      <div class="flex-c ">
-      <p class="text-white  font-bold">
-        Created by Satwr. Training for TailwindCSS.
-      </p>
-      <p class="text-white px-20 font-bold">
-        Thanks for your Time 🥂
-      </p>
-      </div>
-      
     </footer>
   </body>
 </html>
